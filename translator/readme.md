@@ -43,3 +43,19 @@ for sentence in sentences:
     print(f"English: {sentence}")
     print(f"French: {translation}")
 ```
+
+## Using Microsoft phi model from hugging face
+- Hugging face is an open 
+- Install requirements
+```
+pip install transformers torch
+```
+- Import useful APIs
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+```
+- Import model
+```python
+model_name = "microsoft/phi-4"  # Replace with the correct Phi model name
+cache_dir = "./models/phi"  # Specify a local directory for caching
+```
